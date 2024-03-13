@@ -1,0 +1,332 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(244, 238, 250);
+}
+
+html {
+  scroll-behavior: smooth; /* Agrega un desplazamiento suave a toda la página */
+}
+
+@keyframes scrollAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgb(244, 238, 250);
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  background-color: #dbc1e6;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+header h1 {
+  color: brown;
+  font-weight: bold;
+}
+
+section {
+  padding: 50px 0;
+}
+
+section h2 {
+  text-align: center;
+}
+
+#inicio {
+  background-color: #dbc1e6;
+  color: black;
+  padding: 50px 0;
+
+  border-radius: 50px;
+  margin: 10px 10px 10px 10px;
+}
+
+#inicio button {
+  background-color: #ab74c1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#inicio button:hover {
+  background-color: #895aa9;
+}
+
+.inicio-content a {
+  text-decoration: none;
+  color: #ab74c1;
+}
+
+.inicio-content {
+  display: flex;
+  justify-content: center;
+}
+
+.inicio-text p {
+  text-align: left;
+  width: 400px;
+}
+
+.inicio-text h2 {
+  margin-bottom: 10px;
+}
+
+.slide {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.slide {
+  animation: slide-in 1s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+#servicios {
+  background-color: #eadcf2;
+  color: black;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.services-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-text {
+  width: 350px;
+  margin-right: 20px;
+  flex-shrink: 0;
+
+  text-align: left;
+  margin-left: 40px;
+}
+
+.services-text h2 {
+  text-align: left;
+}
+
+.services-image {
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.services-image img {
+  width: 100%;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#testimonios {
+  padding: 50px 0;
+}
+
+#testimonios h2 {
+  text-align: left;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.testimonial {
+  background-color: #eddffa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.testimonial p {
+  margin-bottom: 10px;
+}
+
+.testimonial cite {
+  font-weight: bold;
+}
+
+#ofrecemos {
+  padding: 50px 0;
+}
+
+#ofrecemos h2 {
+  text-align: right;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.offer {
+  background-color: #e7cdff;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.offer p {
+  margin-bottom: 10px;
+}
+
+.offer:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#actividades {
+  background-color: #e9d6fb;
+  text-align: center;
+}
+
+.ac-description {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#reserva {
+  background-color: #eadcf2;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+}
+
+#reserva button {
+  background-color: #ab74c1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#reserva button:hover {
+  background-color: #895aa9;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer h5 {
+  margin: 5px 0;
+  text-align: left;
+}
+
+.footer-content {
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  header nav ul li {
+    margin-right: 10px;
+  }
+
+  .inicio-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inicio-text p {
+    width: auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .services-content {
+    flex-direction: column;
+  }
+
+  .services-text,
+  .services-image {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .services-text h2 {
+    margin-left: 0;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #ofrecemos h2 {
+    text-align: center;
+  }
+
+  .offer-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer h5 {
+    text-align: center;
+
+    .footer-content {
+      text-align: center;
+    }
+  }
+}
